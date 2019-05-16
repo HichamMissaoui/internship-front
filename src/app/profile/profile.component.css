@@ -1,0 +1,77 @@
+.container{
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+#content{
+    width: 1200px;
+    overflow: auto;
+    margin: 30px auto;
+    display: flex;
+}
+
+.input{
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+#profile{
+    width: 1200px;
+    min-height: 500px;
+    background: #fff;
+}
+
+#userInfos{
+    width: 580px;
+    min-height: 500px;
+    float: left;
+    padding: 30px;
+    box-sizing:border-box;
+}
+
+#userInfos input[type=text], #userInfos input[type=password]{
+    width:500px;
+}
+
+#userInfos input{
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+#userImg{
+    width: 600px;
+    min-height: 500px;
+    float: left;
+    padding: 30px;
+    box-sizing:border-box;
+}
+
+
+
+.user-img{
+    width: 60% !important;
+
+}
+
+
+.user-profile{
+    width:280px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background: #fff;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.user-profile p{
+   color: green;
+   font-size: 18px;
+   margin-bottom: 20px;
+}

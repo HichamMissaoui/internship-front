@@ -1,0 +1,26 @@
+<h1 id="title">Administration | Users List</h1>
+
+
+<!--
+<div *ngFor="let user of adminService.usersList">
+<h1>{{ user.name}}</h1>
+<h2>{{ user.email}}</h2>
+<h3>provider : {{ user.provider }}</h3>
+<div *ngFor="let role of user.roles">
+<h4>{{role.name}}</h4>
+</div>
+</div>
+-->
+
+
+<div id="users">
+
+    <div class="user" *ngFor="let user of adminService.usersList">
+        <a ><img class="section-img" [src]="getImgUrl(user.imageUrl)" /></a>
+        <p>{{ user.name}}</p>
+        <h4>{{ user.email}}</h4>
+        <a  class="btn btn-primary">Select</a>
+    </div>
+    
+</div>
+  

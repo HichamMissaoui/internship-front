@@ -1,0 +1,97 @@
+
+<div class="container">
+  <h1 style="margin-left: 35%">Internship Request</h1>
+  <div class="row">
+      <div class="col-md-1">
+      </div>
+    <div class="col-md-4">
+      <span>Date début de stage</span><br>
+    <p-calendar [(ngModel)]="value" [showIcon]="true"></p-calendar>
+    </div>
+  
+  
+  <div class="col-md-3">
+    <span>Durée de stage</span><br>
+    <select name="" id="">
+      <option value="1">1 mois</option>
+      <option value="2">2 mois</option>
+      <option value="3">3 mois</option>
+      <option value="4">4 mois</option>
+      <option value="5">5 mois</option>
+      <option value="6">6 mois</option>
+      <option value="0">Plus de 6 mois</option>
+    </select>
+  </div>
+
+  <div class="col-md-2">
+      <span>Ville</span><br>
+    <input type="text" name="city" />
+  </div>
+</div>
+  
+  <h3>Choose a language : </h3>
+  
+  <div class="form-group" >
+    <select class="form-control" id="select" >
+      <option value="java" >JAVA</option>
+      <option value="php">PHP</option>
+      <option value="angular">ANGULAR</option>
+    </select>
+  </div>
+  
+  <h3>Quiz :</h3>
+  <div class="question">
+    <p>1. The Question?</p>
+  
+    <ul class="answers">
+  
+      <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Option 1</label><br />
+  
+      <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Option 2</label><br />
+  
+      <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Option 3</label><br />
+  
+      <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Option 4</label><br />
+  
+    </ul>
+  
+    <div id="results">
+  
+      The Right answers is
+  
+    </div>
+  
+    <div id="category1">
+  
+      <p><strong>Question 1:</strong> The correct answer is the <strong>Option 1</strong>.</p>
+  
+    </div>
+  </div>
+  <div class="question">
+    <p>1. The Question?</p>
+  
+    <ul class="answers">
+  
+      <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Option 1</label><br />
+  
+      <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Option 2</label><br />
+  
+      <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Option 3</label><br />
+  
+      <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Option 4</label><br />
+  
+    </ul>
+  
+    <div id="results">
+  
+      The Right answers is
+  
+    </div>
+  
+    <div id="category1">
+  
+      <p><strong>Question 1:</strong> The correct answer is the <strong>Option 1</strong>.</p>
+  
+    </div>
+  </div>
+</div>

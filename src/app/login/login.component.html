@@ -1,0 +1,32 @@
+<div class="login-container">
+  <div class="login-content">
+      <h1 class="login-title">Login to MyProject</h1>
+      <div class="social-login">
+        <a class="btn btn-block social-btn google" href="{{GOOGLE_AUTH_URL}}">
+            <img src="assets/images/google-icon.png" alt="Google" /> Log in with Google</a>
+        <a class="btn btn-block social-btn facebook" href="{{FACEBOOK_AUTH_URL}}">
+            <img src="assets/images/fb-logo.png" alt="Facebook" /> Log in with Facebook</a>
+        <a class="btn btn-block social-btn github" href="{{GITHUB_AUTH_URL}}">
+            <img src="assets/images/github-icon.png" alt="Github" /> Log in with Github</a>
+    </div>
+      <div class="or-separator">
+          <span class="or-text">OR</span>
+      </div>
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-item">
+            <input type="email" name="email" 
+                class="form-control" placeholder="Email"
+                value="" required ngModel email />
+        </div>
+        <div class="form-item">
+            <input type="password" name="password" 
+                class="form-control" placeholder="Password"
+                value="" onChange="" required ngModel />
+        </div>
+        <div class="form-item">
+            <button type="submit" class="btn btn-block btn-primary" [disabled]="f.invalid">Login</button>
+        </div>
+    </form>                    
+      <span class="signup-link"> New user? <a routerLink="/signup">Sign up!</a></span>
+  </div>
+</div>

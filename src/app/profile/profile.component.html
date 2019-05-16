@@ -1,0 +1,26 @@
+<div id="content">
+    <div id="profile">
+        <div id="userImg">
+            <h2></h2>
+            <img [src]="getImageURL()" style="width: 550px;margin-top: 0%">
+        </div>
+        <div id="userInfos">
+            <h1 style="margin-left: 25%">Personal informations</h1>
+            <h3>Name : {{ getUserName() | titlecase }}</h3>
+            <h3>Email : {{ getEmail() }}</h3>
+            <br>
+            <span *ngIf="isLocalProvider()">
+            <h2 style="margin-left: 25%">Security informations</h2>
+            <form action="" method="post">
+                <input type="password" class="input" placeholder="Old password" name="opassword" required />
+                <input type="password" class="input" placeholder="New password" name="npassword" required />
+                <input type="password" class="input" placeholder="Confirmation password" name="cpassword" required />
+                <input type="submit" value="Update" class="btn btn-primary" />
+
+            </form>
+        </span>
+
+        </div>
+
+    </div>
+</div>
